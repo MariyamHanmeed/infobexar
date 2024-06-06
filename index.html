@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task22-WebDevelopment</title>
+    <link rel="shortcut icon" href="img/icon-favicon-21.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Section 1-->
+    <header class="top-dark">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="social-list d-flex gap-3">
+                        <span class="text-white text-capitalize">Connect with us:</span>
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item ">
+                                <a class="" href="#">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="" href="#">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="" href="#">
+                                    <i class="fa-solid fa-wifi"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="" href="#">
+                                    <i class="fa-brands fa-google"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="" href="#">
+                                    <i class="fa-brands fa-vimeo-v"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 text-end">
+                    <div class="contact-info">
+                        <a class="border-end pe-3 text-decoration-none" href="#">info@bexer.com</a>
+                        <a href="#" class="ps-3 text-capitalize text-decoration-none">Call us now:<span class="ps-2"
+                                style="color: #6CC417;">123 456 5523</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Section 2-->
+        <nav class="navbar bg-light p-4">
+            <div class="container-fluid justify-content-between ps-5">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="" width="200" height="50">
+                </a>
+                <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+                    <a class="navbar-brand text-black fw-bold fs-5" href="#">Navbar</a>
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link text-black fw-bold fs-5" href="#scrollspyAbout">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black fw-bold fs-5" href="#scrollspyServices">Services</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-black fw-bold fs-5" data-bs-toggle="dropdown"
+                                href="#" role="button" aria-expanded="false">Dropdown</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#scrollspyTeam">Team</a></li>
+                                <li><a class="dropdown-item" href="#scrollspyTestimonials">Testimonials</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#scrollspyLearn">Learn</a></li>
+                                <li><a class="dropdown-item" href="#scrollspyFooter">Footer</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+                    <h4 id="scrollspyHeading1">First heading</h4>
+                    <p>...</p>
+                    <h4 id="scrollspyHeading2">Second heading</h4>
+                    <p>...</p>
+                    <h4 id="scrollspyHeading3">Third heading</h4>
+                    <p>...</p>
+                    <h4 id="scrollspyHeading4">Fourth heading</h4>
+                    <p>...</p>
+                    <h4 id="scrollspyHeading5">Fifth heading</h4>
+                    <p>...</p>
+                  </div> -->
+                <!-- <ul class="menu d-flex p-0 m-0 align-items-center">
+                    <li class="menu-item px-4 position-relative">
+                        <a href="#"
+                            class="dropdown-toggle menu-link text-decoration-none nav-drop fw-bold text-uppercase  text-center">Home</a>
+                        <ul class="dropdown bg-white mt-2 p-0 shadow">
+                            <li class="dropdown-list"><a class="dropdown-item" href="#">Homepage 1</a></li>
+                            <li class="dropdown-list"><a class="dropdown-item" href="#">Homepage 2</a></li>
+                            <li class="dropdown-list"><a class="dropdown-item" href="#">Homepage 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item px-3 position-relative">
+                        <a href="#"
+                            class="dropdown-toggle menu-link text-decoration-none nav-drop fw-bold text-uppercase">About
+                            us</a>
+                        <ul class="dropdown bg-white mt-2 p-0 shadow">
+                            <li class="dropdown-list"><a href="#" class="dropdown-item">About us 1</a></li>
+                            <li class="dropdown-list"><a href="#" class="dropdown-item">About us 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item px-4 position-relative">
+                        <a href="#"
+                            class="dropdown-toggle menu-link text-decoration-none nav-drop fw-bold text-uppercase">Blog</a>
+                        <ul class="dropdown bg-white mt-2 p-0 shadow">
+                            <li class="dropdown-list"><a href="#" class="dropdown-item">Blog</a></li>
+                            <li class="dropdown-list"><a href="#" class="dropdown-item">Blog Slidebar</a></li>
+                            <li class="dropdown-list"><a href="#" class="dropdown-item">Blog details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item px-3 position-relative p-0">
+                        <a href="#" class="menu-link text-decoration-none nav-drop fw-bold text-uppercase">Contact</a>
+                    </li>
+                    <li class="menu-item px-4 position-relative">
+                        <a href="#"
+                            class="dropdown-toggle menu-link text-decoration-none nav-drop fw-bold text-uppercase">Pages</a>
+                        <ul class="dropdown bg-white mt-2 p-0 shadow">
+                            <li class="dropdown-list"><a href="#" class="dropdown-item">Team</a></li>
+                            <li class="dropdown-list"><a href="#" class="dropdown-item">Case study</a></li>
+                            <li class="dropdown-list"><a href="#" class="dropdown-item">Project details</a></li>
+                            <li class="dropdown-list"><a href="#" class="dropdown-item">Service 1</a></li>
+                            <li class="dropdown-list"><a href="#" class="dropdown-item">Service 2</a></li>
+                            <li class="dropdown-list"><a href="#" class="dropdown-item">Service details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item px-4 position-relative">
+                        <a href="#"
+                            class="dropdown-toggle menu-link text-decoration-none nav-drop fw-bold text-uppercase">Shortcode</a>
+                        <ul class="dropdown bg-white mt-2 p-0 shadow">
+                            <li class="dropdown-list"><a href="#" class="dropdown-item">Buttons</a></li>
+                            <li class="dropdown-list"><a href="#" class="dropdown-item">Icons</a></li>
+                            <li class="dropdown-list"><a href="#" class="dropdown-item">Typography</a></li>
+                            <li class="dropdown-list"><a href="#" class="dropdown-item">Acoordians</a></li>
+                            <li class="dropdown-list"><a href="#" class="dropdown-item">Blog contents</a></li>
+                            <li class="dropdown-list"><a href="#" class="dropdown-item">Service contents</a></li>
+                            <li class="dropdown-list"><a href="#" class="dropdown-item">Team contents</a></li>
+                        </ul>
+                    </li>
+                </ul> -->
+                <span class="pe-3"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <button type="button" class="btn py-3 rounded-pill btn-lg text-uppercase fw-bold">Get Started</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--Section 3-->
+        <div class="container-fluid ">
+            <div class="row">
+                <div id="demo-slider" class="carousel slide" data-bs-ride="carousel">
+                    <div class="">
+                        <div class="carousel-item active pexels-head">
+                            <img src="img/slider images/pexels-photo-3777560.jpeg" alt="" class="d-block"
+                                style="width:100%">
+                            <div class="col-lg-6 p-4 m-4 pexels-body">
+                                <h4 class="mb-0 letter-spacing text-uppercase">We are here to</h4>
+                                <h1 class="mb-4 text-uppercase fw-bold">Planning Business</h1>
+                                <p class="mb-5 text-capitalize">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit,
+                                    sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                                <button type="button" class="btn-primary fw-bold p-3 text-uppercase">More
+                                    services</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item pexels-head">
+                            <img src="img/slider images/pexels-photo-3778198.jpeg" alt="" class="d-block"
+                                style="width:100%">
+                            <div class="col-lg-6 col-12 p-4 m-4 pexels-body">
+                                <h4 class="mb-0 letter-spacing text-uppercase">We are here to</h4>
+                                <h1 class="mb-4 text-uppercase fw-bold">Planning Business</h1>
+                                <p class="mb-5 text-capitalize">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit,
+                                    sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                                <button type="button" class="btn-primary p-3 fw-bold text-uppercase">More
+                                    services</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item pexels-head">
+                            <img src="img/slider images/pexels-photo-3778607.jpeg" alt=" " class="d-block"
+                                style="width:100%">
+                            <div class="col-lg-6 col-12 p-4 m-4 pexels-body">
+                                <h4 class="mb-0 letter-spacing text-uppercase">We are here to</h4>
+                                <h1 class="mb-4 text-uppercase fw-bold">Planning Business</h1>
+                                <p class="mb-5 text-capitalize">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit,
+                                    sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                                <button type="button" class="btn-primary p-3 fw-bold p-3 text-uppercase">More
+                                    services</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item pexels-head">
+                            <img src="img/slider images/pexels-photo-3777574.webp" alt=" " class="d-block"
+                                style="width:100%">
+                            <div class="col-lg-6 col-12 p-4 m-4 pexels-body">
+                                <h4 class="mb-0 letter-spacing text-uppercase">We are here to</h4>
+                                <h1 class="mb-4 text-uppercase fw-bold">Planning Business</h1>
+                                <p class="mb-5 text-capitalize">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit,
+                                    sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                                <button type="button" class="btn-primary p-3border-dark fw-bold p-3 text-uppercase">More
+                                    services</button>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo-slider"
+                            data-bs-slide="prev">
+                            <span><i class="fa-solid fa-arrow-left"></i></i></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo-slider"
+                            data-bs-slide="next">
+                            <span><i class="fa-solid fa-arrow-right"></i></i></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Section-4-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-12">
+                    <div class="card card-primary card-translate rounded-0  border-0 shadow text-white pt-5 pb-5 ">
+                        <div class="card-body border-0 text-center">
+                            <span class="card-icon d-inline-block text-white"><i class="fa-regular fa-gem"></i></span>
+                            <h5 class="card-title pt-4 fw-bold text-uppercase">Business Solution</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="card card-secondary card-translate border-0 shadow rounded-0 pt-5 pb-5 ">
+                        <div class="card-body text-center">
+                            <span class="card-icon d-inline-block"><i class="fa-solid fa-chart-bar"></i></i></span>
+                            <h5 class="card-title pt-4 fw-bold text-uppercase">Market Research</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="card card-secondary card-translate rounded-0 border-0 shadow  pt-5 pb-5">
+                        <div class="card-body text-center">
+                            <span class="card-icon d-inline-block text-center bg-transparent"><i
+                                    class="fa-regular fa-lightbulb"></i></span>
+                            <h5 class="card-title pt-4 fw-bold text-uppercase">Business Strategy</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="card card-secondary card-translate rounded-0 border-0 shadow pt-5 pb-5 ">
+                        <div class="card-body text-center">
+                            <span class="card-icon d-inline-block bg-transparent"><i
+                                    class="fa-solid fa-gauge"></i></i></span>
+                            <h5 class="card-title pt-4 fw-bold text-uppercase">Speed optimization</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Section-5-->
+        <div class="container" id="scrollspyAbout">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <img src="img/about us/about-us.png" alt="">
+                </div>
+                <div class="col-lg-6 col-12 p-5">
+                    <div class="dots">
+                        <span class="dot1"></span>
+                        <span class="dot2"></span>
+                        <span class="dot3"></span>
+                    </div>
+                    <br>
+                    <h3 class="text-secondary">About us</h3>
+                    <br>
+                    <h1 class="text-uppercase g-3">We are dynamic team and business agency</h1>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid inventore adipisci cum sunt
+                        reiciendis, eveniet sequi voluptatum ipsum fuga quia soluta ducimus, nobis, possimus animi omnis
+                        tempora enim debitis deserunt!</p>
+                    <br>
+                    <button type="button" class="btn py-3 rounded-pill btn-lg text-uppercase fw-bold">Get
+                        Started</button>
+                </div>
+            </div>
+        </div>
+        <!--Section-6-->
+        <div class="container-fluid my-5">
+            <div class="row">
+                <div class="col-lg-10 col-12 top-dark d-flex p-5">
+                    <div class="d-flex mx-4">
+                        <span class="review-icon"><i class="fa-solid fa-bullseye"></i></span>
+                        <div class="ps-3 text-white">
+                            <h2>50+</2h>
+                                <p class="text-capitalize fs-6">Projects done</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mx-4">
+                        <span class="review-icon"><i class="fa-regular fa-calendar"></i></i></span>
+                        <div class="ps-3">
+                            <h2 class="text-white">25+</2h>
+                                <p class="text-white text-capitalize fs-6">Years experience</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mx-4">
+                        <span class="review-icon"><i class="fa-solid fa-trophy"></i></i></span>
+                        <div class="ps-3">
+                            <h2 class="text-white">250+</2h>
+                                <p class="text-white text-capitalize fs-6">Awards win</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mx-4">
+                        <span class="review-icon"><i class="fa-regular fa-face-smile"></i></i></span>
+                        <div class="ps-3">
+                            <h2 class="text-white">500+</2h>
+                                <p class="text-white text-capitalize fs-6">Happy Customers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Section-7-->
+        <div class="container">
+            <div class="row px-5">
+                <div class="col-lg-6 col-12 py-5">
+                    <div class="dots">
+                        <span class="dot1"></span>
+                        <span class="dot2"></span>
+                        <span class="dot3"></span>
+                    </div>
+                    <br>
+                    <h3 class="text-secondary text-capitalize">Why choose us</h3>
+                    <br>
+                    <h1 class="text-uppercase g-3 fw-bold">Why they choose bexar</h1>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid inventore adipisci cum sunt
+                        reiciendis!</p>
+                    <br>
+                    <ul class="px-0">
+                        <li class="list-group-item py-2">
+                            <div class="d-flex">
+                                <span class="card-icon me-3"><i class="fa-solid fa-tag"></i></span>
+                                <div>
+                                    <h5 class="text-uppercase fw-bold">Creative Design</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <span class="card-icon me-3"><i class="fa-solid fa-greater-than-equal"></i></span>
+                                <div>
+                                    <h5 class="text-uppercase fw-bold">Pixel perfect coding</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-12 p-2 align-self-center">
+                    <img src="img/feature/feature.jpg" alt="" class="" style="width:100%">
+                </div>
+            </div>
+        </div>
+        <!--Section-8-->
+        <div class="top-dark services-section">
+            <div class="container" id="scrollspyServices">
+                <div class="row justify-content-center my-5">
+                    <div class="col-lg-8 col-12 text-center text-uppercase">
+                        <div class="dots">
+                            <span class="dot1"></span>
+                            <span class="dot2"></span>
+                            <span class="dot3"></span>
+                        </div>
+                        <h3 class="text-secondary text-capitalize lh-lg">Best service</h3>
+                        <h1 class="text-uppercase text-white fw-bold">service we provide</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Section-9-->
+        <div class="bg-grey">
+            <div class="container services">
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <div class="card rounded-0 border-0 shadow">
+                            <div class="position-relative">
+                                <img src="img/service images/service-1.jpg" alt="" class="card-img-top rounded-0">
+                                <span class="service-icon"><i class="fa-regular fa-gem"></i></span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-uppercase">Market Analysis</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a href="#" class="btn-sec text-decoration-none text-uppercase fw-bold fs-6 ">Read
+                                    more<span class="p-2"><i class="fa-solid fa-arrow-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="card rounded-0 border-0 shadow">
+                            <div class="position-relative">
+                                <img src="img/service images/service-2.jpg" alt="" class="card-img-top rounded-0">
+                                <span class="service-icon"><i class="fa-regular fa-handshake"></i></span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-uppercase">Business consulting</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a href="#" class="btn-sec text-decoration-none text-uppercase fw-bold fs-6 ">Read
+                                    more<span class="p-2"><i class="fa-solid fa-arrow-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="card rounded-0 border-0 shadow">
+                            <div class="position-relative">
+                                <img src="img/service images/service-3.jpg" alt="" class="card-img-top rounded-0">
+                                <span class="service-icon"><i class="fa-solid fa-bag-shopping"></i></span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-uppercase">Invest planning</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a href="#" class="btn-sec text-decoration-none text-uppercase fw-bold fs-6 ">Read
+                                    more<span class="p-2"><i class="fa-solid fa-arrow-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Section-10-->
+            <div class="container" id="scrollspyTeam">
+                <div class="row justify-content-center my-5">
+                    <div class="col-lg-8 col 12 text-center">
+                        <div class="dots">
+                            <span class="dot1"></span>
+                            <span class="dot2"></span>
+                            <span class="dot3"></span>
+                        </div>
+                        <h3 class="text-secondary text-capitalize">Our Team</h3>
+                        <h1 class="text-uppercase text-black fw-bold">We are dynamic team and business agency</h1>
+                    </div>
+                </div>
+                <div class="row pb-5">
+                    <div class="col-lg-4 col-12">
+                        <div class="card bg-transparent border-0 rounded-0 team-card">
+                            <img src="img/team images/team-1.jpg" alt="image" class="card-img-top rounded-0">
+                            <div class="team-social">
+                                <ul class="list-inline mb-0">
+                                    <li class="list-inline-item">
+                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-body text-center py-4">
+                                <h5 class="text-uppercase fw-bold">Monica Hellona</h5>
+                                <p class="text-secondary text-uppercase">Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="card border-0 rounded-0 team-card bg-transparent">
+                            <img src="img/team images/team-2.jpg" alt="image" class="card-img-top rounded-0">
+                            <div class="team-social">
+                                <ul class="list-inline mb-0">
+                                    <li class="list-inline-item">
+                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-body text-center py-4">
+                                <h5 class="text-uppercase fw-bold">Alex Monatinmo</h5>
+                                <p class="text-secondary text-uppercase">Project Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="card border-0 rounded-0 team-card bg-transparent">
+                            <img src="img/team images/team-3.jpg" alt="image" class="card-img-top rounded-0">
+                            <div class="team-social">
+                                <ul class="list-inline mb-0">
+                                    <li class="list-inline-item">
+                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class=" text-center py-4">
+                                <h5 class="text-uppercase fw-bold">Jennifer Garner</h5>
+                                <p class="text-secondary text-uppercase">Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Section-11-->
+            <div class="container-fluid">
+                <div class="row px-5">
+                    <div class="col-lg-6 col 12">
+                        <div class="dots">
+                            <span class="dot1"></span>
+                            <span class="dot2"></span>
+                            <span class="dot3"></span>
+                        </div>
+                        <h3 class="text-secondary text-capitalize">Case Study</h3>
+                        <h1 class="text-uppercase">Bexar case studies</h1>
+                    </div>
+                    <div class="col-lg-6 col 12 text-end align-self-end">
+                        <button type="button" class="btn py-3 rounded-pill btn-lg text-uppercase fw-bold">Get
+                            Started</button>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-3 col-12 px-0 ">
+                        <div class="card border-0">
+                            <img src="img/project images/project-1.jpg" alt="image" class="card-img-top rounded-0">
+                            <div class="card-body">
+                                <p class="text-uppercase fw-bold m-0 color-primary">Business Solution</p>
+                                <a href="#"
+                                    class="text-uppercase card-anchor fw-bold text-decoration-none fs-5">Celebrate
+                                    with satoli</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 px-0">
+                        <div class="card border-0">
+                            <img src="img/project images/project-2.jpg" alt="image" class="card-img-top rounded-0">
+                            <div class="card-body">
+                                <p class="text-uppercase fw-bold m-0 color-primary">Digital Marketing</p>
+                                <a href="#"
+                                    class="text-uppercase card-anchor fw-bold text-decoration-none fs-5">Celebrate
+                                    with satoli</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 px-0">
+                        <div class="card border-0">
+                            <img src="img/project images/project-3.jpg" alt="image" class="card-img-top rounded-0">
+                            <div class="card-body">
+                                <p class="text-uppercase fw-bold m-0 color-primary">Financial Analytsis</p>
+                                <a href="#"
+                                    class="text-uppercase card-anchor fw-bold text-decoration-none fs-5">Celebrate
+                                    with satoli</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 px-0">
+                        <div class="card  border-0">
+                            <img src="img/project images/project-4.jpg" alt="image" class="card-img-top rounded-0">
+                            <div class="card-body">
+                                <p class="text-uppercase m-0 fw-bold color-primary">Marketing Strategy</p>
+                                <a href="#"
+                                    class="text-uppercase card-anchor fw-bold text-decoration-none fs-5">Celebrate
+                                    with satoli</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Section-12-->
+        <div class="bg-lightgrey mt-5 py-5">
+            <div class="container" id="scrollspyTestimonials">
+                <div class="row">
+                    <div id="Clients-slider" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="col-lg-8 col-12 text-center ptb offset-2">
+                                    <div class="dots mb-3">
+                                        <span class="dot1"></span>
+                                        <span class="dot2"></span>
+                                        <span class="dot3"></span>
+                                    </div>
+                                    <h3 class="text-secondary text-capitalize mb-2">Testimonials</h3>
+                                    <h1 class="text-uppercase text-black fw-bold">What clients are say?
+                                    </h1>
+                                    <img src="img/client images/client-1.jpg" alt="" class="client-img">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                                        explicabo deleniti
+                                        aspernatur
+                                        sapiente dolor unde praesentium quibusdam corrupti commodi a
+                                        alias odio ullam
+                                        ut,
+                                        similique
+                                        at ipsa enim? Alias, nisi amet consectetur adipisicing elit.
+                                        Odit explicabo
+                                        deleniti
+                                        aspernatur
+                                        sapiente dolor unde praesentium quibusdam corrupti commodi a
+                                        alias odio ullam
+                                        ut,
+                                        similique
+                                        at ipsa enim? Alias, nisi?</p>
+                                    <h5 class="text-uppercase text-black mt-5 fw-bold">Alicage Peter
+                                    </h5>
+                                    <P class="client-primary">Designer</P>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-8 col-12 text-center ptb offset-2">
+                                    <div class="dots mb-3">
+                                        <span class="dot1"></span>
+                                        <span class="dot2"></span>
+                                        <span class="dot3"></span>
+                                    </div>
+                                    <h3 class="text-secondary text-capitalize mb-2">Testimonials</h3>
+                                    <h1 class="text-uppercase text-black fw-bold">What clients are say?
+                                    </h1>
+                                    <img src="img/client images/client-2.jpg" alt="" class="client-img">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                                        explicabo deleniti
+                                        aspernatur
+                                        sapiente dolor unde praesentium quibusdam corrupti commodi a
+                                        alias odio ullam
+                                        ut,
+                                        similique
+                                        at ipsa enim? Alias, nisi amet consectetur adipisicing elit.
+                                        Odit explicabo
+                                        deleniti
+                                        aspernatur
+                                        sapiente dolor unde praesentium quibusdam corrupti commodi a
+                                        alias odio ullam
+                                        ut,
+                                        similique
+                                        at ipsa enim? Alias, nisi?</p>
+                                    <h5 class="text-uppercase text-black mt-5 fw-bold">Dominic Alen</h5>
+                                    <P class="client-primary">Designer</P>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#Clients-slider"
+                                data-bs-slide="prev">
+                                <span><i class="fa-solid fa-arrow-left"></i></i></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#Clients-slider"
+                                data-bs-slide="next">
+                                <span><i class="fa-solid fa-arrow-right"></i></i></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Section-13-->
+        <section class="section bg-img2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-11 text-center mx-auto">
+                        <h1 class="text-white text-uppercase fw-bold">Bexar give the smart solution for
+                            your
+                            business</h1>
+                        <a href="#" class="btn rounded-pill text-uppercase fw-bold p-3">Get an quote</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Section-14-->
+        <div class="bg-grey">
+            <div class="container" id="scrollspyLearn">
+                <div class="row py-5">
+                    <div class="dots">
+                        <span class="dot1"></span>
+                        <span class="dot2"></span>
+                        <span class="dot3"></span>
+                    </div>
+                    <h3 class="text-secondary text-capitalize mb-2">Latest news</h3>
+                    <h1 class="text-uppercase text-black fw-bold">Learn from bexar</h1>
+                </div>
+                <div class="row pb-5">
+                    <div class="col-lg-4 col-12">
+                        <div class="card border-0 position-relative rounded-0 shadow">
+                            <div class="card-type">Article</div>
+                            <img src="img/post/post-1.jpg" alt="image">
+                            <div class="card-body">
+                                <h6 class="text-uppercase"><span style="color:gray">By</span> admin<span
+                                        style="color:gray">/ on</span> 2 sep, 2018</h6>
+                                <a href="#" class="text-decoration-none post-desc fw-bold text-uppercase">Lorem
+                                    ipsum
+                                    dolor sit amet consectetur.</a>
+                                <div class="dots">
+                                    <span class="dot1"></span>
+                                    <span class="dot2"></span>
+                                    <span class="dot3"></span>
+                                </div>
+                                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.
+                                    Repellendus praesentium
+                                    quam, dolorum iste blanditiis illum non sint dignissimos quis fuga
+                                    eos
+                                    consequuntur
+                                    harum adipisci debitis, unde nostrum excepturi veritatis eligendi?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="card border-0 position-relative rounded-0 shadow">
+                            <div class="card-type">Article</div>
+                            <img src="img/post/post-2.jpg" alt="image">
+                            <div class="card-body">
+                                <h6 class="text-uppercase"><span style="color:gray">By</span> admin<span
+                                        style="color:gray">/ on</span> 2 sep, 2018</h6>
+                                <a href="#" class="text-decoration-none post-desc fw-bold text-uppercase">Lorem
+                                    ipsum
+                                    dolor sit amet consectetur.</a>
+                                <div class="dots">
+                                    <span class="dot1"></span>
+                                    <span class="dot2"></span>
+                                    <span class="dot3"></span>
+                                </div>
+                                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.
+                                    Repellendus praesentium
+                                    quam, dolorum iste blanditiis illum non sint dignissimos quis fuga
+                                    eos
+                                    consequuntur
+                                    harum adipisci debitis, unde nostrum excepturi veritatis eligendi?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="card border-0 position-relative rounded-0 shadow">
+                            <div class="card-type">Article</div>
+                            <img src="img/post/post-3.jpg" alt="image">
+                            <div class="card-body">
+                                <h6 class="text-uppercase"><span style="color:gray">By</span> admin<span
+                                        style="color:gray">/ on</span> 2 sep, 2018</h6>
+                                <a href="#" class="text-decoration-none post-desc fw-bold text-uppercase">Lorem
+                                    ipsum
+                                    dolor sit amet consectetur.</a>
+                                <div class="dots">
+                                    <span class="dot1"></span>
+                                    <span class="dot2"></span>
+                                    <span class="dot3"></span>
+                                </div>
+                                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.
+                                    Repellendus praesentium
+                                    quam, dolorum iste blanditiis illum non sint dignissimos quis fuga
+                                    eos
+                                    consequuntur
+                                    harum adipisci debitis, unde nostrum excepturi veritatis eligendi?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--Section-15-->
+    <footer>
+        <div class="top-dark py-5">
+            <div class="container-fluid" id="scrollspyFooter">
+                <div class="row px-5">
+                    <div class="col-lg-6 col-12">
+                        <a href="#">
+                            <img src="img/logo-alt.png" alt="" width="200" height="50">
+                        </a>
+                        <p class="text-white pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quasi
+                            animi aut laborum labore nostrum nam aperiam sunt, quas nulla a officiis illo distinctio,
+                            repellat officia similique unde iste molestias it amet consectetur adipisicing elit. Sequi
+                            quasi
+                            animi aut laborum labore nostrum nam aperiam sunt, quas nulla a officiis illo distinctio,
+                            repellat officia similique unde iste molestias.</p>
+                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
+                            blanditiis
+                            omnis.</p>
+                        <h5 class="text-white text-uppercase fw-bold mt-5">Follow us on</h5>
+                        <div class="footer-team">
+                            <ul class="list-inline mt-4">
+                                <li class="list-inline-item">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 px-5">
+                        <div class="row">
+                            <div class="col-6 mb-5">
+                                <h5 class="text-white text-uppercase fw-bold">Services</h5>
+                                <ul class="list-unstyled mt-4">
+                                    <li class="mb-3">
+                                        <a class="service-list-item text-capitalize" href="#"><span class="pe-3"><i
+                                                    class="fa-solid fa-angle-right"></i></span>Company History</a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a class="text-capitalize service-list-item" href="#"><span class="pe-3"><i
+                                                    class="fa-solid fa-angle-right"></i></span>About us</a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a class="service-list-item text-capitalize" href="#"><span class="pe-3"><i
+                                                    class="fa-solid fa-angle-right"></i></span>Contact us</a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a class=" service-list-item text-capitalize" href="#"><span class="pe-3"><i
+                                                    class="fa-solid fa-angle-right"></i></span>Services</a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a class=" service-list-item text-capitalize" href="#"><span class="pe-3"><i
+                                                    class="fa-solid fa-angle-right"></i></span>Privacy policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <h5 class="text-white text-uppercase fw-bold">Contact info</h5>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <p class="text-white mt-4">9567 Turner Trace Apt. 466 North Willie, BC C3G8A4
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <ph class="text-white">+21 3457 982433</ph>
+                                    </li>
+                                    <li>
+                                        <p class="text-white mt-3">info@bexar.com</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12">
+                                <h5 class="text-white text-uppercase">Subscribe newsletter</h5>
+                                <form method="post" action="#">
+                                    <div class="position-relative mt-4">
+                                        <input type="email" name="username" id="username" placeholder="Enter your email"
+                                            class="w-100 outline-none py-3 px-3 border-0  text-white last-form">
+                                        <button type="submit"
+                                            class="btn  btn-subscribe text-uppercase fw-bold rounded-end-pill btn py-3 ">Subscribe</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Section-16-->
+        <div class="bottom-dark py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <p class="text-white  m-0"><span style="color: #6CC417;">Bexar</span> © 2023 All Right
+                            Reserved
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-12 text-end">
+                        <div class="contact-info">
+                            <a class="border-end pe-3 text-decoration-none" href="#">Terms of Service</a>
+                            <a href="#" class="ps-3 text-capitalize text-decoration-none">Privacy policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
